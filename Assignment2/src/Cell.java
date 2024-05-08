@@ -48,8 +48,7 @@ public class Cell {
 		
 		// TODO: Set the value of content to Empty (Remember this is an enum)
 		content = Player.Empty;
-		
-				
+					
 				
 	}
 		

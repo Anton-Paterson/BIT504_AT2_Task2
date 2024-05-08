@@ -45,7 +45,6 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 	// for displaying game status message
 	private JLabel statusBar;       
 	
-
 	/** Constructor to setup the UI and game components on the panel */
 	public GameMain() {   
 		
