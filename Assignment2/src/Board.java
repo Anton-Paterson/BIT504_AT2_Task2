@@ -8,21 +8,41 @@ public class Board {
 	// grid line half width
 	public static final int GRID_WIDHT_HALF = GRID_WIDTH / 2;
 	
+	
 	//2D array of ROWS-by-COLS Cell instances
 	Cell [][] cells;
 	
 	/** Constructor to create the game board */
 	public Board() {
-		
+	
 	 //TODO: initialise the cells array using ROWS and COLS constants 
-	Cell [][] cells	= new Cell[GameMain.ROWS][GameMain.COLS];
+	Cell [][] cells	= new Cell	[GameMain.ROWS][GameMain.COLS];
+	cells = this.cells;
+	
+	cells[0][0] = new Cell(1,1);
+	//cells[0][0].content = Player.Empty;
+	cells[0][1] = new Cell(1,1);
+	cells[0][2] = new Cell(1,1);
+	cells[1][0] = new Cell(1,1);
+	cells[1][1] = new Cell(1,1);
+	cells[1][2] = new Cell(1,1);
+	cells[2][0] = new Cell(1,1);
+	cells[2][1] = new Cell(1,1);
+	cells[2][2] = new Cell(1,1);
 	
 	for (int row = 0; row < GameMain.ROWS; ++row) {
+		for (int col = 0; col < GameMain.COLS; ++col) {
+			cells[row][col].content =  Player.Empty;;
+		}
+	}
+	
+			
+	/*for (int row = 0; row < GameMain.ROWS; ++row) {
 			for (int col = 0; col < GameMain.COLS; ++col) {
 				cells[row][col] = new Cell(row, col);
 			}
 		}
-	
+	*/
 	}
 	
 
