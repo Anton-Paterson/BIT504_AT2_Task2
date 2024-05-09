@@ -51,6 +51,9 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 		// TODO: This JPanel fires a MouseEvent on MouseClicked so add required event listener to 'this'.          
 		
 		setSize(CANVAS_WIDTH, CANVAS_HEIGHT);
+		setSize(500,500);
+		addKeyListener(this);
+		addMouseListener(this);
 		
 		
 		// Setup the status bar (JLabel) to display status message       
@@ -71,6 +74,7 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 		
 		Board board = new Board();
 		board = this.board;
+		board.paint(getGraphics());
 				
 		setVisible(true);
 
@@ -139,7 +143,7 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 	
 	  /** Initialise the game-board contents and the current status of GameState and Player) */
 		public void initGame() {
-			
+						
 			
 			for (int row = 0; row < ROWS; ++row) {          
 				for (int col = 0; col < COLS; ++col) {  
@@ -151,7 +155,7 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 			 currentState = GameState.Playing;
 			 currentPlayer = Player.Cross;
 		}
-		
+	
 		
 		/**After each turn check to see if the current player hasWon by putting their symbol in that position, 
 		 * If they have the GameState is set to won for that player
