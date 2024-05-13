@@ -21,7 +21,6 @@ public class Cell {
 		 
 	}
 	
-
 	/** Paint itself on the graphics canvas, given the Graphics context g */ 
 	public void paint(Graphics g) {
 		//Graphics2D allows setting of pen's stroke size

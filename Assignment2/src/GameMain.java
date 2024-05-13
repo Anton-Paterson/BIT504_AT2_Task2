@@ -173,7 +173,7 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 			}
 			
 			//otherwise no change to current state of playing
-			
+			board.paint(getGraphics());
 		}
 		
 				
