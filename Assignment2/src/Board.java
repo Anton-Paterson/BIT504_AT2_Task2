@@ -22,8 +22,7 @@ public class Board {
 			for (int col = 0; col < GameMain.COLS; ++col) {
 				cells[row][col] = new Cell(row, col);
 		}
-		}
-		
+		}	
 	}
 	
 	 /** Return true if it is a draw (i.e., no more EMPTY cells) */ 
