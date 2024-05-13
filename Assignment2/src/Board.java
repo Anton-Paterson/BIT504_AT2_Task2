@@ -66,7 +66,6 @@ public class Board {
 		// Check the diagonal in the other direction (Top Right to bottom Left)
 		if( cells[0][2].content == thePlayer && cells[1][1].content == thePlayer && cells[2][0].content == thePlayer)
 			return true;
-
 		
 		//no winner, keep playing
 		return false;
