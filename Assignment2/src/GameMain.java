@@ -73,8 +73,8 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 		// TODO: Create a new instance of the game "Board"class. HINT check the variables above for the correct name
 		
 		Board board = new Board();
-		board = this.board;
-		board.paint(getGraphics());
+		this.board = board;
+		//board.paint(null);
 				
 		setVisible(true);
 
@@ -98,8 +98,9 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 				
 				
 				//TODO: create the new GameMain panel and add it to the frame
-				frame.add(new GameMain());
 				new GameMain();
+				frame.add(new GameMain());
+				
 				
 				//TODO: set the default close operation of the frame to exit_on_close
 				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);				
@@ -107,6 +108,7 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 		 });
 	}
 	/** Custom painting codes on this JPanel */
+	@Override
 	public void paintComponent(Graphics g) {
 		//fill background and set colour to white
 		super.paintComponent(g);
@@ -144,7 +146,6 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 	  /** Initialise the game-board contents and the current status of GameState and Player) */
 		public void initGame() {
 						
-			
 			for (int row = 0; row < ROWS; ++row) {          
 				for (int col = 0; col < COLS; ++col) {  
 					// all cells empty

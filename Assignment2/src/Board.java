@@ -15,28 +15,17 @@ public class Board {
 	public Board() {
 	
 	 //TODO: initialise the cells array using ROWS and COLS constants 
-	Cell [][] cells	= new Cell	[GameMain.ROWS][GameMain.COLS];
-	cells = this.cells;
-	
-	//cells[0][0] = new Cell(1,1);
-	//cells[0][0].content = = Player.Empty;
-	/*cells[0][1] = new Cell(1,1);
-	cells[0][2] = new Cell(1,1);
-	cells[1][0] = new Cell(1,1);
-	cells[1][1] = new Cell(1,1);
-	cells[1][2] = new Cell(1,1);
-	cells[2][0] = new Cell(1,1);
-	cells[2][1] = new Cell(1,1);
-	cells[2][2] = new Cell(1,1);
-	*/
-	
-			
+		
+		Cell [][] cells	= new Cell	[GameMain.ROWS][GameMain.COLS];
+		//cells = this.cells = cells;
+		this.cells = cells;
+		
 	for (int row = 0; row < GameMain.ROWS; ++row) {
 			for (int col = 0; col < GameMain.COLS; ++col) {
 				cells[row][col] = new Cell(row, col);
 		}
 		}
-	
+		
 	}
 	
 
@@ -47,9 +36,7 @@ public class Board {
 		// Hint: Use a nested loop (see the constructor for an example). Check whether any of the cells content in the board grid are Player.Empty. If they are, it is not a draw.
 		// Hint: Return false if it is not a draw, return true if there are no empty positions left
 		
-		//for (int row = 0; row <GameMain.ROWS; ++row) {
-		//	if 
-		//}
+		
 		return false; 
 	}
 	
