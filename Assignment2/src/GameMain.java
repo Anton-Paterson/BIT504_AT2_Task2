@@ -63,6 +63,7 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 		statusBar.setOpaque(true);       
 		statusBar.setBackground(Color.LIGHT_GRAY);  
 		
+		
 		//layout of the panel is in border layout
 		setLayout(new BorderLayout());       
 		add(statusBar, BorderLayout.SOUTH);
