@@ -214,7 +214,6 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 		board.paint(getGraphics());
 	           
 	}
-		
 	
 	@Override
 	public void mousePressed(MouseEvent e) {
