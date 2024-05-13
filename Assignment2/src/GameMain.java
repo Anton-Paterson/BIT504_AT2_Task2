@@ -174,6 +174,7 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 			
 			//otherwise no change to current state of playing
 			board.paint(getGraphics());
+			
 		}
 		
 				
@@ -193,16 +194,22 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 			if (rowSelected >= 0 && rowSelected < ROWS && colSelected >= 0 && colSelected < COLS && board.cells[rowSelected][colSelected].content == Player.Empty) {
 				// move  
 				board.cells[rowSelected][colSelected].content = currentPlayer; 
+<<<<<<< HEAD
 				// update currentState 
 				
 				
+=======
+				// update currentState  
+>>>>>>> refs/heads/Status_bar_update
 				updateGame(currentPlayer, rowSelected, colSelected); 
 				// Switch player
 				if (currentPlayer == Player.Cross) {
 					currentPlayer =  Player.Nought;
+					statusBar.setText("O's Turn");
 				}
 				else {
 					currentPlayer = Player.Cross;
+					statusBar.setText("X's Turn");
 				}
 			}             
 		} else {        
