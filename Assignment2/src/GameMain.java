@@ -60,6 +60,7 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 		statusBar.setOpaque(true);       
 		statusBar.setBackground(Color.LIGHT_GRAY); 
 		
+		
 				
 		//layout of the panel is in border layout
 		setLayout(new BorderLayout());       
@@ -96,7 +97,6 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 				//create the new GameMain panel and add it to the frame
 				new GameMain();
 				frame.add(new GameMain());
-				
 				
 				//TODO: set the default close operation of the frame to exit_on_close
 				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);				
@@ -193,7 +193,9 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 			if (rowSelected >= 0 && rowSelected < ROWS && colSelected >= 0 && colSelected < COLS && board.cells[rowSelected][colSelected].content == Player.Empty) {
 				// move  
 				board.cells[rowSelected][colSelected].content = currentPlayer; 
-				// update currentState                  
+				// update currentState 
+				
+				
 				updateGame(currentPlayer, rowSelected, colSelected); 
 				// Switch player
 				if (currentPlayer == Player.Cross) {
