@@ -176,8 +176,7 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 			board.paint(getGraphics());
 			
 		}
-		
-				
+						
 	
 		/** Event handler for the mouse click on the JPanel. If selected cell is valid and Empty then current player is added to cell content.
 		 *  UpdateGame is called which will call the methods to check for winner or Draw. if none then GameState remains playing.
