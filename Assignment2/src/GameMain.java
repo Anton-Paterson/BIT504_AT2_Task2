@@ -212,8 +212,7 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 		
 		//redraw the graphics on the UI  
 		board.paint(getGraphics());
-		
-           
+	           
 	}
 		
 	
