@@ -194,13 +194,7 @@ public class GameMain extends JPanel implements MouseListener, ActionListener, K
 			if (rowSelected >= 0 && rowSelected < ROWS && colSelected >= 0 && colSelected < COLS && board.cells[rowSelected][colSelected].content == Player.Empty) {
 				// move  
 				board.cells[rowSelected][colSelected].content = currentPlayer; 
-<<<<<<< HEAD
-				// update currentState 
-				
-				
-=======
-				// update currentState  
->>>>>>> refs/heads/Status_bar_update
+
 				updateGame(currentPlayer, rowSelected, colSelected); 
 				// Switch player
 				if (currentPlayer == Player.Cross) {
